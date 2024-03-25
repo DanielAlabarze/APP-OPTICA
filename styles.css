@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnModo {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  display: block;
+
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+.modoClaro {
+  text-align: center;
+  background-color: rgb(133, 247, 143);
+  color: rgb(14, 0, 0);
+  height: 100%;
+  padding-bottom: 2rem;
+}
+.modoOscuro {
+  text-align: center;
+  background-color: rgb(14, 0, 0);
+  color: rgb(10, 252, 30);
+  height: 100%;
+}
+
+.logoHead {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.imgOjo {
+  width: 6rem;
+}
+
+input {
+  width: 9rem;
+  height: 2rem;
+  margin: 2rem 0.5rem 2rem 0.5rem;
+  background-color: rgb(228, 222, 225);
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.btnInversion {
+  width: 6.5rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-color: rgb(10, 252, 30);
+
+  cursor: pointer;
+}
+
+.btnResetear {
+  width: 6.5rem;
+  height: 2rem;
+  margin: 0, 5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  background-color: rgb(10, 252, 30);
+
+  cursor: pointer;
+}
+
+.btnInversion:hover {
+  background-color: rgb(85, 83, 83);
+  color: white;
+}
+
+.btnResetear:hover {
+  background-color: red;
+  color: white;
+}
+
+.logoFooter {
+  width: 7rem;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(161, 158, 161);
+  padding: 1rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 570px) {
+  .switch {
+    display: block;
+
+    --width-of-switch: 2.5em;
+    --height-of-switch: 1.5em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1rem;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.2em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+
+  .logoHead {
+    width: 10rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .titulo2 {
+    font-size: 1.4rem;
+  }
+
+  .imgOjo {
+    width: 4rem;
+  }
+
+  input {
+    width: 5.8rem;
+    height: 2rem;
+    margin: 0.5rem 0.1rem 1rem 0.1rem;
+    background-color: rgb(228, 222, 225);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  .total {
+    font-size: 0.85rem;
+  }
+
+  .logoFooter {
+    width: 4rem;
+  }
+
+  .pre-wrap {
+    font-size: 0.6rem;
+  }
+}

@@ -15,44 +15,48 @@
     <title>Optica App</title>
   </head>
   <body>
-    <div class="modoClaro modoOscuro">
-      <div class="btnModo">
-        <label class="switch">
-          <input class="cambioModo" type="checkbox" />
-          <span class="slider"></span>
-        </label>
+    <div>
+      <div class="modoClaro modoOscuro">
+        <div class="btnModo">
+          <label class="switch">
+            <input class="cambioModo" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <img src="./img/glasses.png" class="logoHead" alt="glasses" />
+        <h1>App Optica</h1>
+        <h2 class="titulo2">Transcripción de Receta Oftálmica</h2>
+
+        <h2>Ojo Derecho</h2>
+        <img src="./img/eye.png" class="imgOjo" alt="ojo" />
+        <br />
+
+        <input type="number" class="input1" placeholder="Esférico" />
+        <input type="number" class="input2" placeholder="Cilíndrico" />
+        <input type="number" class="input3" placeholder="Grados" />
+        <br />
+
+        <h2>Ojo Izquierdo</h2>
+        <img src="./img/eye.png" class="imgOjo" alt="ojo" />
+        <br />
+        <input type="number" class="input4" placeholder="Esférico" />
+        <input type="number" class="input5" placeholder="Cilíndrico" />
+        <input type="number" class="input6" placeholder="Grados" />
+        <br />
+
+        <button class="btnInversion">Transcribir</button>
+        <button class="btnResetear">Resetar</button>
+        <h2 class="total">La inversión aparecerá aquí</h2>
       </div>
-      <img src="./img/glasses.png" class="logoHead" alt="glasses" />
-      <h1>App Optica</h1>
-      <h2 class="titulo2">Transcripción de Receta Oftálmica</h2>
-
-      <h2>Ojo Derecho</h2>
-      <img src="./img/eye.png" class="imgOjo" alt="ojo" />
-      <br />
-
-      <input type="number" class="input1" placeholder="Esférico" />
-      <input type="number" class="input2" placeholder="Cilíndrico" />
-      <input type="number" class="input3" placeholder="Grados" />
-      <br />
-
-      <h2>Ojo Izquierdo</h2>
-      <img src="./img/eye.png" class="imgOjo" alt="ojo" />
-      <br />
-      <input type="number" class="input4" placeholder="Esférico" />
-      <input type="number" class="input5" placeholder="Cilíndrico" />
-      <input type="number" class="input6" placeholder="Grados" />
-      <br />
-
-      <button class="btnInversion">Transcribir</button>
-      <button class="btnResetear">Resetar</button>
-      <h2 class="total">La inversión aparecerá aquí</h2>
+      <footer class="footer">
+        <div>
+          <img src="./img/glasses.png" alt="logo" class="logoFooter" />
+        </div>
+        <div>
+          <small class="pre-wrap">Copyright © Mi App Optica 2024 </small>
+        </div>
+      </footer>
     </div>
-    <footer class="footer">
-      <div>
-        <img src="./img/glasses.png" alt="logo" class="logoFooter" />
-      </div>
-      <div><small class="pre-wrap">Copyright © Mi App Optica 2024 </small></div>
-    </footer>
     <script src="index.js"></script>
   </body>
 </html>

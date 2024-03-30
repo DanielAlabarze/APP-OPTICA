@@ -77,7 +77,7 @@ btnInversion.addEventListener("click", (e) => {
     input5.value == "" ||
     input6.value == ""
   ) {
-    total.innerText = "Ingrese Valores en todos los Campos";
+    total.innerHTML = "Ingrese Valores en todos los Campos" + "<br>" + "<br>" + "<small>Para graduaciones con decimales usar un ( . ) y no una ( , ) para separar los valores.</small>" + "<br>" + "<br>" + "<small>Introducir valores sin signo si el valor es positivo y con signo ( - ) adelante si el valor es negativo.</small>";
   }
 });
 
